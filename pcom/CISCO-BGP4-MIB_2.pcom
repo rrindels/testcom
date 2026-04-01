@@ -1,0 +1,769 @@
+{
+  "@vendor": "CISCO",
+  "mibs": [
+    "CISCO-BGP4-MIB"
+  ],
+  "notes": "An extension to the IETF BGP4 MIB module defined in \nRFC 1657. Organization: Cisco Systems, Inc.",
+  "enterpriseOids": [
+    "1.3.6.1.4.1.9"
+  ],
+  "aliases": [],
+  "objects": [
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteOrigin",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The ultimate origin of the route information.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteOrigin",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteOrigin",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.7",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteASPathSegment",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The sequence of AS path segments.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteASPathSegment",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteASPathSegment",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.8",
+            "valueType": "OctetString"
+          }
+        ]
+      },
+      "subClass": "OUTPUT2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteNextHop",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The Network Layer address of the border router that should be used for the destination network.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteNextHop",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.9"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteNextHop",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.9",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "USAGE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteMedPresent",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Indicates the presence/absence of MULTI_EXIT_DISC attribute for the route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteMedPresent",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.10"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteMedPresent",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.10",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteMultiExitDisc",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This metric is used to discriminate between multiple exit points to an adjacent autonomous system. The value of this object is irrelevant if the value of of cbgpRouteMedPresent is false(2).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteMultiExitDisc",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.11"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteMultiExitDisc",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.11",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "USAGE2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteLocalPrefPresent",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Indicates the presence/absence of LOCAL_PREF attribute for the route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteLocalPrefPresent",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.12"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteLocalPrefPresent",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.12",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteLocalPref",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The degree of preference calculated by the local BGP4 speaker for the route. The value of this object is irrelevant if the value of cbgpRouteLocalPrefPresent is false(2).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteLocalPref",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.13"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteLocalPref",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.13",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteAtomicAggregate",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Whether or not the local system has selected a less specific route without selecting a more specific route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteAtomicAggregate",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.14"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteAtomicAggregate",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.14",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT6",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteAggregatorAS",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The AS number of the last BGP4 speaker that performed route aggregation. A value of zero (0) indicates the absence of this attribute.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAS",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.15"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAS",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.15",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT7",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddrType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Represents the type of Network Layer address stored in cbgpRouteAggregatorAddr.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddrType",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.16"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddrType",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.16",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "OUTPUT8",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddr",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The Network Layer address of the last BGP4 speaker that performed route aggregation. A value of all zeros indicates the absence of this attribute.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddr",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.17"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteAggregatorAddr",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.17",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "OUTPUT9",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteBest",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "An indication of whether or not this route was chosen as the best BGP4 route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteBest",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.18"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteBest",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.18",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT10",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpRouteUnknownAttr",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "One or more path attributes not understood by this BGP4 speaker.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpRouteUnknownAttr",
+          "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.19"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpRouteUnknownAttr",
+            "oid": "1.3.6.1.4.1.9.9.187.1.1.1.1.19",
+            "valueType": "OctetString"
+          }
+        ]
+      },
+      "subClass": "DISCARDS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerLastErrorTxt",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Implementation specific error description for bgpPeerLastErrorReceived.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerLastErrorTxt",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.1.1.7"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "BGP4-MIB::bgpPeerEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerLastErrorTxt",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.1.1.7",
+            "valueType": "OctetString"
+          }
+        ]
+      },
+      "subClass": "ERRORS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerPrevState",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The BGP peer connection previous state.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerPrevState",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.1.1.8"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "BGP4-MIB::bgpPeerEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerPrevState",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.1.1.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "STATUS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerCapValue",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The value of the announced capability.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerCapValue",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.2.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerCapValue",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.2.1.3",
+            "valueType": "OctetString"
+          }
+        ]
+      },
+      "subClass": "VALUE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerAddrFamilyName",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Implementation specific Address Family name.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerAddrFamilyName",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.3.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerAddrFamilyName",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.3.1.3",
+            "valueType": "OctetString"
+          }
+        ]
+      },
+      "subClass": "VALUE2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerAcceptedPrefixes",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Number of accepted route prefixes on this connection, which belong to an address family.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerAcceptedPrefixes",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerAcceptedPrefixes",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.1",
+            "valueType": "Counter32"
+          }
+        ]
+      },
+      "subClass": "CONTEXTS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerDeniedPrefixes",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This counter is incremented when a route prefix, which belongs to an address family, received on this connection is denied. It is initialized to zero when the connection is undergone a hard reset.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerDeniedPrefixes",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerDeniedPrefixes",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.2",
+            "valueType": "Gauge32"
+          }
+        ]
+      },
+      "subClass": "IO1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerPrefixAdminLimit",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Max number of route prefixes accepted for an address family on this connection.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerPrefixAdminLimit",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerPrefixAdminLimit",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.3",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "CAPACITY1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerPrefixThreshold",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Prefix threshold value (%) for an address family on this connection at which warning message stating the prefix count is crossed the threshold or corresponding SNMP notification is generated.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerPrefixThreshold",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerPrefixThreshold",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.4",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "SPEED1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerPrefixClearThreshold",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Prefix threshold value (%) for an address family on this connection at which SNMP clear notification is generated if prefix threshold notification is already generated.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerPrefixClearThreshold",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.5"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerPrefixClearThreshold",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.5",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "SPEED2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerAdvertisedPrefixes",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This counter is incremented when a route prefix, which belongs to an address family is advertised on this connection. It is initialized to zero when the connection is undergone a hard reset.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerAdvertisedPrefixes",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.6"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerAdvertisedPrefixes",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.6",
+            "valueType": "Gauge32"
+          }
+        ]
+      },
+      "subClass": "CONTEXTS2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerSuppressedPrefixes",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This counter is incremented when a route prefix, which belongs to an address family is suppressed from being sent on this connection. It is initialized to zero when the connection is undergone a hard reset.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerSuppressedPrefixes",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerSuppressedPrefixes",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.7",
+            "valueType": "Gauge32"
+          }
+        ]
+      },
+      "subClass": "CONTEXTS3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-BGP4-MIB::cbgpPeerWithdrawnPrefixes",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This counter is incremented when a route prefix, which belongs to an address family, is withdrawn on this connection. It is initialized to zero when the connection is undergone a hard reset.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-BGP4-MIB::cbgpPeerWithdrawnPrefixes",
+          "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-BGP4-MIB::cbgpPeerWithdrawnPrefixes",
+            "oid": "1.3.6.1.4.1.9.9.187.1.2.4.1.8",
+            "valueType": "Gauge32"
+          }
+        ]
+      },
+      "subClass": "CONTEXTS4",
+      "weight": 2
+    }
+  ]
+}
