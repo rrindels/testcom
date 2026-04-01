@@ -1,0 +1,103 @@
+{
+  "@vendor": "CISCO",
+  "mibs": [
+    "CISCO-TEMPERATURE-MIB"
+  ],
+  "notes": "This MIB is intended for collecting\ntelementry data such as temperature details. Organization: Cisco Systems, Inc.",
+  "enterpriseOids": [
+    "1.3.6.1.4.1.9"
+  ],
+  "aliases": [],
+  "objects": [
+    {
+      "@objectName": "CISCO-TEMPERATURE-MIB::ciscoTempValue",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The current temperature measurement value of AP.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-TEMPERATURE-MIB::ciscoTempValue",
+          "oid": "1.3.6.1.4.1.9.9.870.1.1.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-TEMPERATURE-MIB::ciscoTempValue",
+            "oid": "1.3.6.1.4.1.9.9.870.1.1.1.2",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VOLTAGE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-TEMPERATURE-MIB::ciscoTempHyst",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The current T-Hyst measurement value of AP.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-TEMPERATURE-MIB::ciscoTempHyst",
+          "oid": "1.3.6.1.4.1.9.9.870.1.1.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-TEMPERATURE-MIB::ciscoTempHyst",
+            "oid": "1.3.6.1.4.1.9.9.870.1.1.1.3",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VOLTAGE2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCO-TEMPERATURE-MIB::ciscoTempOs",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The current T-OS measurement value of AP.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCO-TEMPERATURE-MIB::ciscoTempOs",
+          "oid": "1.3.6.1.4.1.9.9.870.1.1.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCO-TEMPERATURE-MIB::ciscoTempOs",
+            "oid": "1.3.6.1.4.1.9.9.870.1.1.1.4",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VOLTAGE3",
+      "weight": 2
+    }
+  ]
+}
