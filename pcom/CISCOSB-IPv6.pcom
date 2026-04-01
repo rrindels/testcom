@@ -1,0 +1,2461 @@
+{
+  "@vendor": "CISCOSB",
+  "mibs": [
+    "CISCOSB-IPv6"
+  ],
+  "notes": "The private MIB module definition for IPv6 MIB. Organization: Cisco Systems, Inc.",
+  "enterpriseOids": [
+    "1.3.6.1.4.1.9"
+  ],
+  "aliases": [],
+  "objects": [
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpAddressPrefixLength",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The prefix length of this address.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpAddressPrefixLength",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.19.1.1"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipAddressEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpAddressPrefixLength",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.19.1.1",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpAddressType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Extend standard field ipAddressType to multicast",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpAddressType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.19.1.2"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipAddressEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpAddressType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.19.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceNdDadAttemps",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "ND Duplicated address detection number of attempts.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceNdDadAttemps",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.1"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceNdDadAttemps",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.1",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "VOLTAGE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceAutoconfigEnable",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Enables or disables Stateless Address Auto configuration on specific interface.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceAutoconfigEnable",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.2"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceAutoconfigEnable",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "UTILIZATION1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceIcmpUnreachSendEnable",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Enables or disables sending of ICMP Destination Unreachable Error on specific interface.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceIcmpUnreachSendEnable",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.3"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceIcmpUnreachSendEnable",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.3",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "ERRORS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceLinkMTU",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The maximum transmission unit (MTU) size of IPv6 packets sent on an interface in bytes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceLinkMTU",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.4"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceLinkMTU",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.4",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "IO2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceMLDVersion",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Set version of MLD protocol on specific interface.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceMLDVersion",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.5"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceMLDVersion",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.5",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VALUE2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceRetransmitTime",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This value will be included in all IPv6 router advertisements sent out this interface. Very short intervals are not recommended in normal IPv6 operation. When a nondefault value is configured, the configured time is both advertised and used by the router itself. When value 0 is configured, 0 seconds (unspecified) advertised in router advertisements and the value 1000 milliseconds is used for the neighbor discovery activity of the router itself.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceRetransmitTime",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.6"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceRetransmitTime",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.6",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "UTILIZATION2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InterfaceIcmpRedirectSendEnable",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Enables or disables sending of ICMP IPv6 redirect messages to re-send a packet through the same interface on which the packet was received.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InterfaceIcmpRedirectSendEnable",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.7"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6InterfaceEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InterfaceIcmpRedirectSendEnable",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.20.1.7",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlinetCidrRouteLifetime",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The remaining length of time, in seconds, that this route will continue to be valid, i.e., time until deprecation. A value of 4,294,967,295 represents infinity.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlinetCidrRouteLifetime",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.21.1.1"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-FORWARD-MIB::inetCidrRouteEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlinetCidrRouteLifetime",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.21.1.1",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "USAGE1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlinetCidrRouteInfo",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's inetCidrRouteProto value.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlinetCidrRouteInfo",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.21.1.2"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-FORWARD-MIB::inetCidrRouteEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlinetCidrRouteInfo",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.21.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipNetToPhysicalIsRouter",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This object has the value 'true(1)', if the neighbor is router; otherwise, the value is 'false(2)'.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipNetToPhysicalIsRouter",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.22.1.1"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipNetToPhysicalEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipNetToPhysicalIsRouter",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.22.1.1",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipNetToPhysicalReachableConfirmed",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Time (in seconds) since the address was confirmed to be reachable. Only, relevant for dynamic entries.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipNetToPhysicalReachableConfirmed",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.22.1.2"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipNetToPhysicalEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipNetToPhysicalReachableConfirmed",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.22.1.2",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VALUE3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRouteDestType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The type of the address used as the destination internetwork address or subnet address.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRouteDestType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRouteDestType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.1",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "USAGE2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRoutePathCost",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Path cost for this static route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRoutePathCost",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRoutePathCost",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.7",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRouteType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Same as inetCidrRouteType MIB (excluded 'other' route type)",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRouteType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRouteType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRouteOwner",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Static - The route is configured over Static IP. This route is written to configuration files. Dhcp - The route is Configured by DHCP (received as part of DHCP configuration) This route IS NOT written to configuration files Default - The route is Configured by default system config exists till any other configuration is applied. Icmp - The route is Configured by ICMP protocol either by router advertisements or to be advertised in router advertisements .",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRouteOwner",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.9"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRouteOwner",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.9",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRouteRowStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The row status variable, used according to row installation and removal conventions. A row entry cannot be modified when the status is marked as active(1).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRouteRowStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.10"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRouteRowStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.10",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetStaticRouteForwardingStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "active - An indication that the route has implication on routing inactive - the route is a backup route or it is down. It is not used in forwarding decision. Down means that the Ip interface on which it is configured is down. (Note: ip interface down may be for two reason - its admin status or the L2 interface , on which the ip interface is configured, status",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetStaticRouteForwardingStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.11"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetStaticRouteForwardingStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.28.1.11",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The inet address type for distance definitions set, either IPv4 or IPv6.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.1",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceConnected",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The administrative distance used for directly connected routes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceConnected",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceConnected",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceStatic",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The administrative distance used for static routes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceStatic",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceStatic",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.3",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE6",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceRip",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The administrative distance used for RIP routes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceRip",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceRip",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.4",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE7",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceOspfInternal",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The administrative distance used for OSPF internal routes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceOspfInternal",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.5"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceOspfInternal",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.5",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE8",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInetRoutingDistanceOspfExternal",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The administrative distance used for OSPF Autonomous System external routes.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInetRoutingDistanceOspfExternal",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.6"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInetRoutingDistanceOspfExternal",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.29.1.6",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE9",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The type of route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT6",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteProto",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The routing mechanism via which this route was learned. Inclusion of values for gateway routing protocols is not intended to imply that hosts should support those protocols.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteProto",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.9"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteProto",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.9",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "OUTPUT7",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteAge",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The number of seconds since this route was last updated or otherwise determined to be correct. Note that no semantics of 'too old' can be implied, except through knowledge of the routing protocol by which the route was learned.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteAge",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.10"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteAge",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.10",
+            "valueType": "Gauge32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT8",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteNextHopAS",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The Autonomous System Number of the Next Hop. The semantics of this object are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. When this object is unknown or not relevant, its value should be set to zero.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteNextHopAS",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.11"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteNextHopAS",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.11",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "DISCARDS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteMetric1",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The primary routing metric for this route. The semantics of this metric are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. If this metric is not used, its value should be set to -1.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric1",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.12"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric1",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.12",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE10",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteMetric2",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "An alternate routing metric for this route. The semantics of this metric are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. If this metric is not used, its value should be set to -1.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric2",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.13"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric2",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.13",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE11",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteMetric3",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "An alternate routing metric for this route. The semantics of this metric are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. If this metric is not used, its value should be set to -1.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric3",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.14"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric3",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.14",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE12",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteMetric4",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "An alternate routing metric for this route. The semantics of this metric are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. If this metric is not used, its value should be set to -1.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric4",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.15"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric4",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.15",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE13",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteMetric5",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "An alternate routing metric for this route. The semantics of this metric are determined by the routing- protocol specified in the route's rlInternInetCidrRouteProto value. If this metric is not used, its value should be set to -1.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric5",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.16"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteMetric5",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.16",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE14",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The row status variable, used according to row installation and removal conventions. A row entry cannot be modified when the status is marked as active(1).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.17"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.17",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE15",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteLifetime",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The remaining length of time, in seconds, that this route will continue to be valid, i.e., time until deprecation. A value of 4,294,967,295 represents infinity.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteLifetime",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.18"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteLifetime",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.18",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "USAGE16",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetCidrRouteInfo",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's inetCidrRouteProto value.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetCidrRouteInfo",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.19"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetCidrRouteInfo",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.30.1.19",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT9",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRouteDestType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The type of the address used as the destination internetwork address or subnet address.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRouteDestType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRouteDestType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.1",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "USAGE17",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRoutePathCost",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Path cost for this static route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRoutePathCost",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRoutePathCost",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.7",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT10",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRouteType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Same as inetCidrRouteType MIB (excluded 'other' route type)",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRouteType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRouteType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT11",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRouteOwner",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Static - The route is configured over Static IP. This route is written to configuration files. Dhcp - The route is Configured by DHCP (received as part of DHCP configuration) This route IS NOT written to configuration files Default - The route is Configured by default system config exists till any other configuration is applied. Icmp - The route is Configured by ICMP protocol either by router advertisements or to be advertised in router advertisements .",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRouteOwner",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.9"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRouteOwner",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.9",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRouteRowStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The row status variable, used according to row installation and removal conventions. A row entry cannot be modified when the status is marked as active(1).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRouteRowStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.10"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRouteRowStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.10",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE18",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlInternInetStaticRouteForwardingStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "active - An indication that the route has implication on routing inactive - the route is a backup route or it is down. It is not used in forwarding decision. Down means that the Ip interface on which it is configured is down.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlInternInetStaticRouteForwardingStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.11"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlInternInetStaticRouteForwardingStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.26.31.1.11",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "USAGE19",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Prefix inet address type. Has to be IPv6.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.2",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddr",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The IPv6 network assigned to the general prefix. This argument must be in the form documented in RFC4293 where the address is specified in hexadecimal using 16-bit values between colons.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddr",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddr",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.3",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrPrefixLength",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Indicates the number of leading one bits that form the mask to be logical-ANDed with the inet address before being compared to the value in the rlIpv6GeneralPrefixInetAddr field.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrPrefixLength",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInetAddrPrefixLength",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.4",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE6",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6GeneralPrefixInterfaceId",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Interface id to use when creating prefix based on point-to-point interface.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInterfaceId",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.5"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixInterfaceId",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.5",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "VALUE7",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6GeneralPrefixRowStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Row status.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixRowStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.6"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6GeneralPrefixRowStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.4.1.6",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "STATUS1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdminStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Admin status of the entry. Relevant only for default entry.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdminStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.6"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdminStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.6",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "STATUS2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvertise",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Whether the prefix is included in router advertisements.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvertise",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvertise",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.7",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT12",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixOnLinkStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "If object has the value 'onlink(1)', this prefix is confidered as on-link. This prefix will be advertised with the L-bit set and will be present in the Routing Table. If object has the value 'not-onlink(2)', this prefix will be advertised with the L-bit clear, but connected state of the prefix will not be changed. If object has the value 'offlink(3)', this prefix is confidered as on-link. This prefix will be advertised with the L-bit clear, and will be not present in the Routing Table.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixOnLinkStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixOnLinkStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "STATUS3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAutonomousFlag",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "If object has the value 'true(1)', this prefix indicates to hosts on the local link that the specified prefix can be used for IPv6 autoconfiguration. The prefix will be advertised with the A-bit set.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAutonomousFlag",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.9"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAutonomousFlag",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.9",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "UTILIZATION3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvPreferredLifetime",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The amount of time (in seconds) that the specified IPv6 prefix is advertised as being preferred.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvPreferredLifetime",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.10"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvPreferredLifetime",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.10",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "ERRORS2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvValidLifetime",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The amount of time (in seconds) that the specified IPv6 prefix is advertised as being valid.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvValidLifetime",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.11"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixAdvValidLifetime",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.11",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT13",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixRowStatus",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Row status.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixRowStatus",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.12"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertPrefixRowStatus",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.6.1.12",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "STATUS4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertAdvIntervalOption",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Indicates to a visiting mobile node the interval at which that node may expect to receive RAs. The node may use this information in its movement detection algorithm.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertAdvIntervalOption",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.1"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6RouterAdvertEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertAdvIntervalOption",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.1",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT14",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertRouterPreference",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Configures a default router preference (DRP) for the router on a specific interface.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertRouterPreference",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.2"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6RouterAdvertEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertRouterPreference",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT15",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6RouterAdvertIsCurHopLimitUserConfigured",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Indicates that hop limit value used in router advertisement is an user configured value and not necessarily value that is used by router itself.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6RouterAdvertIsCurHopLimitUserConfigured",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.3"
+        },
+        "factor": 1,
+        "instance": {
+          "name": "IP-MIB::ipv6RouterAdvertEntry",
+          "oid": null
+        },
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6RouterAdvertIsCurHopLimitUserConfigured",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.7.1.3",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "CAPACITY1",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6PathMtuEntryMtu",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The MTU value that was received in packet-too-bug message for specific destination.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6PathMtuEntryMtu",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.9.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6PathMtuEntryMtu",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.9.1.3",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "IO6",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6PathMtuEntryAge",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This entry's age (seconds)",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6PathMtuEntryAge",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.9.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6PathMtuEntryAge",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.9.1.4",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "CAPACITY2",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpNetToPhysicalTableClearScope",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Scope of the action - type of entries to delete.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpNetToPhysicalTableClearScope",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.10.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpNetToPhysicalTableClearScope",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.10.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "VALUE8",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6HostForwardingDestType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The type of the address used as the destination internetwork address or subnet address.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6HostForwardingDestType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.11.1.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6HostForwardingDestType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.11.1.1",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "USAGE20",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6HostForwardingPathCost",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Path cost for this route.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6HostForwardingPathCost",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.11.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6HostForwardingPathCost",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.11.1.8",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT16",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Action",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Action of the entry. All other fields relevant for appropriate actions.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Action",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Action",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "VALUE9",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6TunnelType",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Tunnel type (manual/isatap/6to4/...).",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6TunnelType",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6TunnelType",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.3",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE10",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Address",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The address used for this tunnel. Could be local IPv4 of the tunnel.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Address",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.4"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Address",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.4",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "USAGE21",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6PrefixLength",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The address/prefix length used for above address if applicable.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6PrefixLength",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.5"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6PrefixLength",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.5",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "USAGE22",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Mtu",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Mtu of this interface. Used for host isatap tunnels",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Mtu",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.6"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6Mtu",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.6",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "CAPACITY3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6MinRtrSolicitationInterval",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Minimal router solicitation interval. Used for host isatap tunnels",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6MinRtrSolicitationInterval",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.7"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6MinRtrSolicitationInterval",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.7",
+            "valueType": "Unsigned32"
+          }
+        ]
+      },
+      "subClass": "USAGE23",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6TunnelToIPv6LinkLayerIPv4",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "IPv4 address used for link-layer of ipv6 over ipv4 tunnel",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6LinkLayerIPv4",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6TunnelToIPv6LinkLayerIPv4",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.15.1.8",
+            "valueType": "IpAddress"
+          }
+        ]
+      },
+      "subClass": "USAGE24",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitInterval",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The time interval between tokens being placed in the bucket, each token represents a single ICMP error message. The interval measured in milliseconds.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitInterval",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.1"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitInterval",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.1",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "ERRORS3",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitBucketSize",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The maximum number of tokens stored in the bucket, each token represents a single ICMP error message.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitBucketSize",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.2"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6IcmpErrorRatelimitBucketSize",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.2",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "ERRORS4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6LLDefaultZone",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The interface which would be used as the egress interface for packets sent without a specified IPv6Z interface identifier or with the default '0' identifier. Zero value means no default interface specified.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6LLDefaultZone",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.3"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6LLDefaultZone",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.3",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "IO7",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6MaximumHopsNumber",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "Maximum number of hops used in router advertisements and all IPv6 packets that are originated by the router.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6MaximumHopsNumber",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.5"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6MaximumHopsNumber",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.5",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO8",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6InetCidrTableClear",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "This scalar indicates to clear all ipv6 routes from inetCidrTable.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6InetCidrTableClear",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.8"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6InetCidrTableClear",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.8",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "OUTPUT17",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlipv6EnabledByDefaultRemovedIfindex",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "the MIB is relevant when mtsc parameter DHCPv6_client_enabled_by_default is TRUE. If the MIB has non zero value the meaning is that ipv6 interface has removed from configuration by the user on the interface and signs to application not to add ipv6 interface. Otherwise (zero value) - the meaning is that Ipv6 interface must be added.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlipv6EnabledByDefaultRemovedIfindex",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.12"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlipv6EnabledByDefaultRemovedIfindex",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.12",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "UTILIZATION4",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlManagementIpv6",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The system management IPv6 address which is kept between system mode changes",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlManagementIpv6",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.13"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlManagementIpv6",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.13",
+            "valueType": "Unknown"
+          }
+        ]
+      },
+      "subClass": "VALUE11",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlManagementIpv6Action",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The system management IPv6 action: clear - delete all ipv6 interfaces from startup configuration database except rlManagementIpv6",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlManagementIpv6Action",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.14"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlManagementIpv6Action",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.14",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "UTILIZATION5",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6DefaultTC",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The default value inserted into the TC field of the IPv6 header of datagrams originated at this entity, whenever a TC value is not supplied by the application.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6DefaultTC",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.16"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6DefaultTC",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.16",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "VALUE12",
+      "weight": 2
+    },
+    {
+      "@objectName": "CISCOSB-IPv6::rlIpv6DefaultUP",
+      "certification": "STANDARD",
+      "class": "NETWORK",
+      "description": "The default value inserted into the User Priority field in the 802.1q VLAN tag of IPv4 frames sent by the CPU.",
+      "domain": "PERFORMANCE",
+      "metaData": {
+        "certified": false
+      },
+      "method": "snmp",
+      "snmp": {
+        "discovery": {
+          "name": "CISCOSB-IPv6::rlIpv6DefaultUP",
+          "oid": "1.3.6.1.4.1.9.6.1.101.129.17"
+        },
+        "factor": 1,
+        "instance": null,
+        "maximum": null,
+        "values": [
+          {
+            "metricType": "",
+            "name": "CISCOSB-IPv6::rlIpv6DefaultUP",
+            "oid": "1.3.6.1.4.1.9.6.1.101.129.17",
+            "valueType": "Integer32"
+          }
+        ]
+      },
+      "subClass": "IO9",
+      "weight": 2
+    }
+  ]
+}
