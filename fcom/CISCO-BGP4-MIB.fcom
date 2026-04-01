@@ -14,7 +14,7 @@
       "domain": "FAULT",
       "event": {
         "EventCategory": 3,
-        "EventType": "cbgpFsmStateChange",
+        "EventType": 0,
         "ExpireTime": 3600,
         "Severity": 3,
         "SubNode": "Device",
@@ -86,7 +86,7 @@
       "domain": "FAULT",
       "event": {
         "EventCategory": 3,
-        "EventType": "cbgpBackwardTransition",
+        "EventType": 0,
         "ExpireTime": 3600,
         "Severity": 3,
         "SubNode": "Device",
