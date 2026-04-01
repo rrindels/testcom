@@ -15,9 +15,9 @@
       "domain": "FAULT",
       "event": {
         "EventCategory": 3,
-        "EventType": "cisco6400ChassisFailureNotification",
+        "EventType": 0,
         "ExpireTime": 3600,
-        "Severity": 3,
+        "Severity": 2,
         "SubNode": "Device",
         "Summary": "The notification signifies that the agent detects a change in the c64ChassisAlarmTable, the NMS application should st..."
       },
